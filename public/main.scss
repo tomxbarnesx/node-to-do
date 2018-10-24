@@ -1,0 +1,13 @@
+body {
+    background-color: blanchedalmond;
+    color: black;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+#the-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+}

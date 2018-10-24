@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SUPERFLY TO DO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
+</head>
+<body>
+    <div id="the-view">
+        <h1>Master? Prove it.</h1>
+        <h3>To Do:</h3>
+        <ul>
+            <% todolist.forEach(function(todo, index) { %>
+                <li><%= todo %> <a href="/show/<%= index %>">✎</a><a href="/delete/<%= index %>">✘</a></li>
+            <% }); %>
+        </ul>
+        <form action="/add/" method="post">
+            <input placeholder="What's next?" id="newtodo" name="newtodo" type="text">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
